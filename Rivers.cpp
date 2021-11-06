@@ -52,7 +52,7 @@ void Rivers::make_river(Rivers* river) {
 string Rivers::list_acidic_rivers(Rivers* rivers) {
     list<Rivers*>::const_iterator begin = rivers->getRivers().begin();
     list<Rivers*>::const_iterator end = rivers->getRivers().end();
-    if (rivers->pH < 8) {
+    if (rivers->pH < 7) {
         string rn = rivers->river_name;
         return rn + " " + list_acidic_tributaries(begin, end);
     }

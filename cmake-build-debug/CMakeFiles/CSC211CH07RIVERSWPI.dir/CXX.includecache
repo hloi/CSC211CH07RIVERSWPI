@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/hloi/CLionProjects/CSC211CH07RIVERSWPI/Rivers.cpp
+Rivers.h
+C:/Users/hloi/CLionProjects/CSC211CH07RIVERSWPI/Rivers.h
+string
+-
+
+C:/Users/hloi/CLionProjects/CSC211CH07RIVERSWPI/Rivers.h
+list
+-
+string
+-
+

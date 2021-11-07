@@ -18,8 +18,6 @@ public:
 
     Rivers(string name, double ph, double DO, list<Rivers*> rivers);
 
-//    Rivers(Rivers* other); // copy constructor
-
     const string &getRiverName() const;
 
     void setRiverName(const string &riverName);

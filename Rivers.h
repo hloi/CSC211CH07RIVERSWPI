@@ -14,9 +14,11 @@ using std::list;
 class Rivers {
 
 public:
-    Rivers(double acid_level=6.5);  // default constructor
+    Rivers() {}  // default constructor
 
     Rivers(string name, double ph, double DO, list<Rivers*> rivers);
+
+    ~Rivers();
 
     const string &getRiverName() const;
 
@@ -77,11 +79,7 @@ public:
      */
     void print();
 
-private:
-    string river_name;
-    double pH;
-    double DO;
-    list<Rivers*> rivers;
+
 
     /**
      * checks a river system with an acidic river, and also with a river considered non-acidic
@@ -92,7 +90,7 @@ private:
     string list_acidic_tributaries(list<Rivers*>::const_iterator begin,
                                    list<Rivers*>::const_iterator end);
     string list_acidic_rivers(Rivers* rivers);
-    double acid_level;
+
     /**
      * any-unhealthy?:  River -> Boolean
      * consumes a river and produces true if the river's ph is under 6.5 or over 8.5,
@@ -151,6 +149,15 @@ private:
     void print(Rivers* rivers, int level=0);
     void print(list<Rivers*>::const_iterator begin,
                list<Rivers*>::const_iterator end, int level);
+    void static setAcidLevel(double acidLevel);
+
+private:
+    string river_name;
+    double pH;
+    double DO;
+    list<Rivers*> rivers;
+    static double acid_level;
+
 };
 
 

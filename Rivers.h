@@ -32,7 +32,7 @@ public:
 
     void setDo(double DO);
 
-    list<Rivers*> &getRivers();
+    const list<Rivers*> &Rivers::getRivers() const {
 
     void setRivers(const list<Rivers*> &rivers);
 

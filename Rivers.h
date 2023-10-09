@@ -56,7 +56,7 @@ public:
     /**
      * lower-all-ph:  River -> River
      * consumes a river system and produces a river system the same as the original,
-     * except all pH readings are 0.3 lower
+     * except all pH readings are 0.1 lower
      * @return Rivers*
      */
     Rivers* lower_all_ph();
